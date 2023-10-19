@@ -6,13 +6,13 @@ function App() {
 
   const addCount = () => {
     if (count < 20) {
-      setCount(count + 1);
+      setCount((prevCount) => prevCount + 1);
     }
   };
 
   const removeCount = () => {
     if (count > 0) {
-      setCount(count - 1);
+      setCount((prevCount) => prevCount - 1);
     }
   };
 
